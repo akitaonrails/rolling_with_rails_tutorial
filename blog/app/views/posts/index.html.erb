@@ -1,0 +1,18 @@
+<h1>My Great Blog</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Body</th>
+  </tr>
+
+<% for post in @posts %>
+  <% div_for(post) do %>
+  <tr>
+    <td><%=h post.title %></td>
+    <td><%=h post.body %></td>
+    <td><%= link_to 'Show', post %></td>
+  </tr>
+  <% end %>
+<% end %>
+</table>

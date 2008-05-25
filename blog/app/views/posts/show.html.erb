@@ -1,0 +1,23 @@
+<p>
+  <b>Title:</b>
+  <%=h @post.title %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%=h @post.body %>
+</p>
+
+<% unless @post.comments.empty? %>
+  <h3>Comments</h3>
+  <% @post.comments.each do |comment| %>
+  <p><%= h comment.body %></p>
+  <% end %>
+<% end %>
+
+<h3>New Comment</h3>
+
+<%= render :partial => @comment = Comment.new, 
+   :locals => { :button_name => 'Create'}%>
+
+<%= link_to 'Back', posts_path %>

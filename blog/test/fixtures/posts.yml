@@ -1,0 +1,13 @@
+DEFAULTS: &DEFAULTS
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
+  
+post_one:
+  title: MyString
+  body: MyText
+  <<: *DEFAULTS
+
+post_two:
+  title: MyString
+  body: MyText
+  <<: *DEFAULTS
