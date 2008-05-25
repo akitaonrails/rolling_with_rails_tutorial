@@ -3,7 +3,7 @@
 This mini Rails app is meant to just showcase the new features in Rails 2.x but it 
 should not be used as a reference for 'best practices'. 
 
-== AkitaOnRails.com - Rolling with Rails 2.0 - The First Full Tutorial
+== Dec 2007 - AkitaOnRails.com - Rolling with Rails 2.0 - The First Full Tutorial
 
 This is the source code for the first Rails 2.0 tutorial released on 
 Dec 12th 2007. There is a screencast available that shows it step by step:
@@ -15,5 +15,10 @@ And the written tutorial in 2 parts here:
 http://www.akitaonrails.com/2007/12/12/rolling-with-rails-2-0-the-first-full-tutorial
 http://www.akitaonrails.com/2007/12/12/rolling-with-rails-2-0-the-first-full-tutorial-part-2
 
-Follow the TAG 2.0 at Github for this.
+Follow the TAG "for_2.0" at Github.
 
+== May 2008 - AkitaOnRails.com - Rolling with Rails 2.1 - The First Full Tutorial
+
+This is the source code for the first Rails 2.1 tutorial released on May 25th, 2008. I will update this file with the tutorial link today.
+
+Follow the TAG "for_2.1" at Github.

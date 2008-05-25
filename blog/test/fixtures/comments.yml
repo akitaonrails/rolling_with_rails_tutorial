@@ -1,13 +1,28 @@
 DEFAULTS: &DEFAULTS
-  created_at: <%= Time.now %>
-  updated_at: <%= Time.now %>
+  created_at: <%= Time.now.to_s(:db) %>
+  updated_at: <%= Time.now.to_s(:db) %>
 
 comment_one:
   post: post_one
-  body: MyText
+  body: MyText1
   <<: *DEFAULTS
 
 comment_two:
+  post: post_one
+  body: MyText2
+  <<: *DEFAULTS
+
+comment_three:
+  post: post_one
+  body: MyText3
+  <<: *DEFAULTS
+
+comment_four:
+  post: post_one
+  body: MyText4
+  <<: *DEFAULTS
+  
+comment_five:
   post: post_two
-  body: MyText
+  body: MyText5
   <<: *DEFAULTS

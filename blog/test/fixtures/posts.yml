@@ -1,13 +1,35 @@
-DEFAULTS: &DEFAULTS
-  created_at: <%= Time.now %>
-  updated_at: <%= Time.now %>
-  
 post_one:
-  title: MyString
+  title: Hello World
   body: MyText
-  <<: *DEFAULTS
+  created_at: <%= (Time.now - 1.week).to_s(:db) %>
+  updated_at: <%= (Time.now - 1.week).to_s(:db) %>
 
 post_two:
-  title: MyString
+  title: Hello Brazil
   body: MyText
-  <<: *DEFAULTS
+  created_at: <%= (Time.now - 2.weeks).to_s(:db)%>
+  updated_at: <%= (Time.now - 2.weeks).to_s(:db)%>
+
+post_three:
+ title: Hello RailsConf
+ body: MyText
+ created_at: <%= (Time.now).to_s(:db)%>
+ updated_at: <%= (Time.now).to_s(:db)%>
+ 
+post_four:
+ title: Rails 2.1
+ body: 
+ created_at: <%= (Time.now).to_s(:db)%>
+ updated_at: <%= (Time.now).to_s(:db)%>
+
+post_five:
+ title: RailsCasts
+ body: 
+ created_at: <%= (Time.now - 1.week).to_s(:db)%>
+ updated_at: <%= (Time.now - 1.week).to_s(:db)%>
+
+post_five:
+ title: AkitaOnRails
+ body: 
+ created_at: <%= (Time.now).to_s(:db)%>
+ updated_at: <%= (Time.now).to_s(:db)%>
