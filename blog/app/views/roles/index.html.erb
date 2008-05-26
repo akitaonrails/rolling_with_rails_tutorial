@@ -2,10 +2,16 @@
 
 <table>
   <tr>
+    <th>Name</th>
+    <th>User</th>
+    <th>Company</th>
   </tr>
 
 <% for role in @roles %>
   <tr>
+    <td><%=h role.name %></td>
+    <td><%=h role.user %></td>
+    <td><%=h role.company %></td>
     <td><%= link_to 'Show', role %></td>
     <td><%= link_to 'Edit', edit_role_path(role) %></td>
     <td><%= link_to 'Destroy', role, :confirm => 'Are you sure?', :method => :delete %></td>

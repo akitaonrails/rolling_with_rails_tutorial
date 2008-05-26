@@ -1,7 +1,8 @@
 require 'digest/sha1'
 
 class User < ActiveRecord::Base
-  has_one :role
+  has_many :roles
+  has_one :company, :through => :roles, :order => 'created_at DESC'
   
   include Authentication
   include Authentication::ByPassword
